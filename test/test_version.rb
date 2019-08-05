@@ -2,15 +2,15 @@ require_relative 'helper'
 
 class TestVersion < Sidetiq::TestCase
   def test_major
-    assert_instance_of Fixnum, Sidetiq::VERSION::MAJOR
+    assert_instance_of Integer, Sidetiq::VERSION::MAJOR
   end
 
   def test_minor
-    assert_instance_of Fixnum, Sidetiq::VERSION::MINOR
+    assert_instance_of Integer, Sidetiq::VERSION::MINOR
   end
 
   def test_patch
-    assert_instance_of Fixnum, Sidetiq::VERSION::PATCH
+    assert_instance_of Integer, Sidetiq::VERSION::PATCH
   end
 
   def test_string
